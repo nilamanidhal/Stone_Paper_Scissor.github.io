@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div id="container">
+        <div>
+        <h1>Stone Paper Scissor</h1>
+    <div id="button">
+       
+        <button  class="stone"onclick="
+        yourchoice='STONE';
+         random_number_generate();
+        console.log(`computer choose ${computer_choice}`);
+    
+        if(computer_choice === 'STONE'){
+          score. tie++;
+          result1='TIE';
+        }
+        else if(computer_choice === 'paper'){
+           score.lost++
+           result1='LOST';
+        }
+        else if(computer_choice === 'scissor'){
+           score.win++;
+           result1='WIN';
+        }
+               result() ;
+     ">STONE</button>
+    
+        <BUTTON class="paper"onclick="
+        yourchoice='PAPER';
+        random_number_generate();
+         console.log(`computer choose ${computer_choice}`);
+    
+        if(computer_choice === 'STONE'){
+            score. win++;
+            result1='WIN';}
+        else if(computer_choice === 'paper'){
+            score. tie++;
+            result1='TIE'}
+        else if(computer_choice === 'scissor'){
+           score. lost++;
+           result1='LOST'}
+        result();
+        ">PAPER</BUTTON>
+    
+        <button class="scissor"onclick="
+        yourchoice='SCISSOR';
+        random_number_generate();
+        if(computer_choice==='STONE'){
+            score. lost++;
+            result1='LOST'}
+        else if(computer_choice='paper'){
+            score. win++; result1='WIN';}
+            else{  score. tie++;result1='TIE';}
+        result();
+         ">SCISSOR</button>
+    
+         <button onclick="localStorage.clear();
+    document.querySelector('#youchoice').innerText=(` ${''}`);
+    document.querySelector('#compchoice').innerText=(`${''}`);
+    document.querySelector('#Fresult1').innerText=(`${''}`);
+    document.querySelector('#Fresult').innerText=(`${''}   ${''}   ${''}`);
+        
+    resetscore();
+         ">RESET</button>
+    </div>
+    
+    <h2 id="youchoice"></h2>
+    <h2 id="compchoice"></h2>
+    <h2 id="Fresult"></h2>
+    <h2 id="Fscore"></h2>
+    <h2 id="Fresult1"></h2>
+    
+    </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
